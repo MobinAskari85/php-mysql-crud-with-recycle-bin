@@ -1,0 +1,18 @@
+button{
+    width: 100px;
+}
+
+table img{
+    width: 30px;
+    cursor: pointer;
+    transform: rotateX(0deg);
+    transition: 1s;
+}
+
+.img-reverse{
+    transform: rotateX(180deg);
+}
+
+thead input{
+    display: none;
+}

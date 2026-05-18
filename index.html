@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container mt-4">
+        <h1 class="text-dark">Mohammad <span class="text-danger">Mobin</span> Askari</h1>
+        <h2>Main Data</h2>
+        <a href="./recycle.html">Recycle Data</a>
+        <form class="my-5 bg-warning p-3 rounded">
+            <div class="form-floating mb-3 mt-3">
+                <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter First Name">
+                <label for="fname">First Name</label>
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit" disabled>Submit</button>
+            <button type="button" class="btn btn-danger w-25" id="delLast" data-bs-toggle="modal" data-bs-target="#delModal">Delet Last</button>
+            <img src="./pic/filter.png" width="30px" id="filter">
+        </form>
+        <table class="table table-bordered text-center" id="main">
+            <thead class="table-info">
+                <tr>
+                    <th>Row</th>
+                    <th>
+                        <img src="./pic/sort-amount-down-alt.png" id="sortName">
+                        First Name
+                        <input type="text" class="" id="filterName" placeholder="Enter First Name">
+                    </th>
+                    <th>
+                        <img src="./pic/sort-amount-down-alt.png" id="sortTurn">
+                        Turn
+                        <input type="text" class="" id="filterTurn" placeholder="Enter Turn">
+                    </th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot class="table-warning">
+                <tr>
+                    <th colspan="2">Number Of Person</th>
+                    <th colspan="3" id="nop"></th>
+                </tr>
+                <tr>
+                    <th colspan="2">Max Turn</th>
+                    <th colspan="3"></th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+            Open modal
+        </button> -->
+
+        <!-- The Modal -->
+        <div class="modal" id="delModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Delete</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        Are you Sure?!
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="yes">Yes</button>
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" >No</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery.js"></script>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
